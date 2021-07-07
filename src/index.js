@@ -23,7 +23,7 @@ const navClose = document.getElementById('nav-close');
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
-if(navToggle){
+if (navToggle) {
   navToggle.addEventListener('click', () => {
     navMenu.classList.add('show-menu')
   })
@@ -31,7 +31,7 @@ if(navToggle){
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
-if(navClose){
+if (navClose) {
   navClose.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
   })
@@ -40,7 +40,7 @@ if(navClose){
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.navLink')
 
-function linkAction(){
+function linkAction() {
   const navMenu = document.getElementById('nav-menu');
 
   navMenu.classList.remove('show-menu');
@@ -49,10 +49,43 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName('skillsContent');
+const skillsHeader = document.querySelectorAll('.skillsHeader');
 
+function toggleSkills() {
+  let itemClass = this.parentNode.className;
+
+  for (let i = 0; i < skillsContent.length; i++) {
+    skillsContent[i].className = 'skillsContent skillsClose';
+  }
+
+  if (itemClass === 'skillsContent skillsClose') {
+    this.parentNode.className = 'skillsContent skillsOpen';
+  }
+}
+
+skillsHeader.forEach(n => n.addEventListener('click', toggleSkills))
 
 /*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]');
+const tabContents = document.querySelectorAll('[data-content]');
 
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.target);
+
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('qualificationActive');
+    });
+
+    target.classList.add('qualificationActive');
+
+    tabs.forEach(tab => {
+      tab.classList.remove('qualificationActive');
+    });
+    tab.classList.add('qualificationActive');
+  })
+})
 
 /*==================== SERVICES MODAL ====================*/
 
@@ -66,10 +99,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/*==================== CHANGE BACKGROUND HEADER ====================*/
 
 
-/*==================== SHOW SCROLL UP ====================*/ 
+/*==================== SHOW SCROLL UP ====================*/
 
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/

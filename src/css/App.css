@@ -254,10 +254,211 @@ img {
 }
 
 /*==================== ABOUT ====================*/
+.aboutImg{
+  width: 400px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.aboutDescription{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.aboutInfo{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.aboutInfo-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.aboutInfo-name{
+  font-size: var(--smaller-font-size);
+}
+
+.aboutInfo-title, .aboutInfo-name{
+  display: block;
+  text-align: center;
+}
+
+.aboutButtons{
+ display: flex;
+ justify-content: center; 
+}
 
 /*==================== SKILLS ====================*/
+.skillsContainer{
+  row-gap: 0;
+}
+
+.skillsHeader{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skillsIcon, .skillsArrow{
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skillsIcon{
+  margin-right: var(--mb-0-75);
+}
+
+.skillsTitle{
+  font-size: var(--h3-font-size);
+}
+
+.skillsSubtitle{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skillsArrow{
+  margin-left: auto;
+  transition: .4s;
+}
+
+.skillsList{
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skillsTitle{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skillsName{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.skillsBar, .skillsPercentage{
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skillsBar{
+  background-color: var(--first-color-lighter);
+}
+
+.skillsPercentage{
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skillsPhotoshop{
+  width: 80%;
+}
+
+.skillsProcreate{
+  width: 80%;
+}
+
+.skillsIllustrator{
+  width: 80%;
+}
+
+.skillsIndesign{
+  width: 60%;
+}
+
+.skillsClose .skillsList{
+  height: 0;
+  overflow: hidden;
+}
+
+.skillsOpen .skillsList{
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skillsOpen .skillsArrow{
+  transform: rotate(-180deg);
+}
+
 
 /*==================== QUALIFICATION ====================*/
+.qualificationTabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualificationButton{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualificationButton:hover{
+  color: var(--first-color);
+}
+
+.qualificationIcon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualificationData{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualificationTitle{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.qualificationSubtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualificationCalendar{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.qualificationRounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.qualificationLine{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--first-color);
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content]{
+  display: none;
+}
+
+.qualificationActive[data-content]{
+  display: block;
+}
+
+.qualificationButton.qualificationActive{
+  color: var(--first-color);
+}
 
 /*==================== SERVICES ====================*/
 

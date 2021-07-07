@@ -1,5 +1,7 @@
 //import logo from '../img/logo.svg';
 import profilePicture from '../img/profile.png';
+import marca from '../img/marca.png';
+import cv from '../assets/hojadevida.pdf';
 import '../css/App.css';
 
 function App() {
@@ -129,14 +131,225 @@ function App() {
         }
         <section className="about section" id="about">
           <h2 className="sectionTitle">Sobre mí</h2>
-          <span className="sectionSubtitle">Mi introducción</span>
+          <span className="sectionSubtitle">Introducción</span>
 
           <div className="aboutContainer container grid">
-            {
-              //<img src="" alt="" className="aboutImg" />
-            }
+            <img src={marca} alt="" className="aboutImg" />
             <div className="aboutData">
-              <p className="aboutDescription"></p>
+              <p className="aboutDescription">Diseñador e ilustrador, con conocimiento amplio y experiencia en creación de marca. </p>
+
+              <div className="aboutInfo">
+
+                <div>
+                  <span className="aboutInfo-title">01+</span>
+                  <span className="aboutInfo-name"> Años <br /> experiencia</span>
+                </div>
+
+                <div>
+                  <span className="aboutInfo-title">20+</span>
+                  <span className="aboutInfo-name"> Completados <br /> proyectos</span>
+                </div>
+
+              </div>
+
+              <div className="aboutButtons">
+                <a download="" href={cv} className="button button--flex">
+                  Descargar hoja de vida<i className="uil uil-download-alt buttonIcon"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {
+          //Skills
+        }
+        <section className="skills section" id="skills">
+          <h2 className="sectionTitle">Habilidades</h2>
+          <span className="sectionSubtitle">Mi nivel técnico</span>
+
+          <div className="skillsContainer container grid">
+            <div>
+              {
+                //Skill 1
+              }
+              <div className="skillsContent skillsOpen">
+                <div className="skillsHeader">
+                  <i className="uil uil-palette skillsIcon"></i>
+                  <div>
+                    <h1 className="skillsTitle">Ilustrador</h1>
+                    <span className="skillsSubtitle">Mas de 4 años</span>
+                  </div>
+
+                  <i className="uil uil-angle-down skillsArrow"></i>
+                </div>
+
+                <div className="skillsList grid">
+
+                  <div className="skillsData">
+                    <div className="skillsTitle">
+                      <h3 className="skillsName">Photoshop</h3>
+                      <span className="skillsNumber">80%</span>
+                    </div>
+                    <div className="skillsBar">
+                      <span className="skillsPercentage skillsPhotoshop"></span>
+                    </div>
+                  </div>
+
+                  <div className="skillsData">
+                    <div className="skillsTitle">
+                      <h3 className="skillsName">Procreate</h3>
+                      <span className="skillsNumber">80%</span>
+                    </div>
+                    <div className="skillsBar">
+                      <span className="skillsPercentage skillsProcreate"></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div>
+              {
+                //Skill 2
+              }
+              <div className="skillsContent skillsClose">
+                <div className="skillsHeader">
+                  <i className="uil uil-swatchbook skillsIcon"></i>
+                  <div>
+                    <h1 className="skillsTitle">Diseñador</h1>
+                    <span className="skillsSubtitle">Mas de 3 años</span>
+                  </div>
+
+                  <i className="uil uil-angle-down skillsArrow"></i>
+                </div>
+
+                <div className="skillsList grid">
+
+                  <div className="skillsData">
+                    <div className="skillsTitle">
+                      <h3 className="skillsName">Illustrator</h3>
+                      <span className="skillsNumber">80%</span>
+                    </div>
+                    <div className="skillsBar">
+                      <span className="skillsPercentage skillsIllustrator"></span>
+                    </div>
+                  </div>
+
+                  <div className="skillsData">
+                    <div className="skillsTitle">
+                      <h3 className="skillsName">InDesign</h3>
+                      <span className="skillsNumber">60%</span>
+                    </div>
+                    <div className="skillsBar">
+                      <span className="skillsPercentage skillsIndesign"></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        {
+          //About
+        }
+
+        <section className="qualification section">
+          <h2 className="sectionTitle">Formación</h2>
+          <span className="sectionSubtitle">Mi recorrido personal</span>
+
+          <div className="qualificationContainer container">
+            <div className="qualificationTabs">
+              {
+                //No tiene experiencia entonces no se agrega la experiencia de trabajo
+              }
+              <div className="qualificationButton button--flex qualificationActive" data-target="#education">
+                <i className="uil uil-graduation-cap qualificationIcon"></i>
+                Educación
+              </div>
+            </div>
+
+            <div className="qualificationSections">
+              {
+                //Informacion sobre educacion
+              }
+              <div className="qualificationContent qualificationActive" data-content id="education">
+                {
+                  //Educacion 1
+                }
+                <div className="qualificationData">
+                  <div>
+                    <h3 className="qualificationTitle">Bachiller</h3>
+                    <span className="qualificationSubtitle">Colombia - Institución Educativa Cárdenas Centro</span>
+                    <div className="qualificationCalendar">
+                      <i className="uil uil-calendar-alt"></i> 2017
+                    </div>
+                  </div>
+
+                  <div>
+                    <span className="qualificationRounder"></span>
+                    <span className="qualificationLine"></span>
+                  </div>
+                </div>
+
+                {
+                  //Educacion 2
+                }
+                <div className="qualificationData">
+                  <div></div>
+                  <div>
+                    <span className="qualificationRounder"></span>
+                    {
+                      //<span className="qualificationLine"></span>
+                    }
+                  </div>
+
+                  <div>
+                    <h3 className="qualificationTitle">Diseño de Comunicación Visual</h3>
+                    <span className="qualificationSubtitle">Colombia - Pontificia Universidad Javeriana Cali</span>
+                    <div className="qualificationCalendar">
+                      <i className="uil uil-calendar-alt"></i> 2018 - 2022
+                    </div>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        {
+          //Services
+        }
+        <section className="services section" id="services">
+          <h2 className="sectionTitle">Servicios</h2>
+          <span className="sectionSubtitle">¿Qué ofrezco?</span>
+
+          <div className="servicesContainer container grid">
+            {
+              //Servicio 1
+            }
+            <div className="servicesContent">
+              <div>
+                <i className="uil uil-ruler"></i>
+                <h3 className="servicesTitle">Branding</h3>
+              </div>
+
+              <span className="button button--flex button--small button--link servicesButton">
+                Leer más
+                <i className="uil uil-arrow-right buttonIcon"></i>
+              </span>
+
             </div>
           </div>
         </section>
