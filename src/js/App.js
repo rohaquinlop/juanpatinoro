@@ -101,7 +101,7 @@ function App() {
         165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
         129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
         -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                    <image className="homeBlob-img" x='10' y='50' xlinkHref={profilePicture} />
+                    <image className="homeBlob-img" x='-45' y='0' xlinkHref={profilePicture} />
                   </g>
                 </svg>
               </div>
@@ -341,7 +341,7 @@ function App() {
             }
             <div className="servicesContent">
               <div>
-                <i className="uil uil-ruler"></i>
+                <i className="uil uil-lightbulb-alt servicesIcon"></i>
                 <h3 className="servicesTitle">Branding</h3>
               </div>
 
@@ -350,7 +350,74 @@ function App() {
                 <i className="uil uil-arrow-right buttonIcon"></i>
               </span>
 
+              <div className="servicesModal">
+                <div className="servicesModal-content">
+                  <h4 className="servicesModal-title">Branding</h4>
+                  <i className="uil uil-times servicesModal-close"></i>
+
+                  <ul className="servicesModal-services grid">
+                    <li className="servicesModal-service">
+                      <i className="uil uil-check-circle servicesModal-icon"></i>
+                      <p>ADN de Marca</p>
+                    </li>
+                    <li className="servicesModal-service">
+                      <i className="uil uil-check-circle servicesModal-icon"></i>
+                      <p>Identidad Textual</p>
+                    </li>
+                    <li className="servicesModal-service">
+                      <i className="uil uil-check-circle servicesModal-icon"></i>
+                      <p>Despliegue de Marca</p>
+                    </li>
+                    <li className="servicesModal-service">
+                      <i className="uil uil-check-circle servicesModal-icon"></i>
+                      <p>Lineamientos de Marca</p>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
             </div>
+            {
+              //Servicio 2
+            }
+            <div className="servicesContent">
+              <div>
+                <i className="uil uil-edit-alt servicesIcon"></i>
+                <h3 className="servicesTitle">Ilustración</h3>
+              </div>
+
+              <span className="button button--flex button--small button--link servicesButton">
+                Leer más
+                <i className="uil uil-arrow-right buttonIcon"></i>
+              </span>
+
+              <div className="servicesModal">
+                <div className="servicesModal-content">
+                  <h4 className="servicesModal-title">Ilustración</h4>
+                  <i className="uil uil-times servicesModal-close"></i>
+
+                  <ul className="servicesModal-services grid">
+                    <li className="servicesModal-service">
+                      <i className="uil uil-check-circle servicesModal-icon"></i>
+                      <p>Creación de Conceptos</p>
+                    </li>
+                    <li className="servicesModal-service">
+                      <i className="uil uil-check-circle servicesModal-icon"></i>
+                      <p>Creación de Universos Visuales</p>
+                    </li>
+                    <li className="servicesModal-service">
+                      <i className="uil uil-check-circle servicesModal-icon"></i>
+                      <p>Creación de Personajes</p>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+
+
           </div>
         </section>
 
