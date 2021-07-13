@@ -1020,7 +1020,7 @@ img {
   }
 
   .swiper-button-next{
-    left: -3.5rem;
+    right: -3.5rem;
   }
 
   .swiper-container-horizontal > .swiper-pagination-bullets{
