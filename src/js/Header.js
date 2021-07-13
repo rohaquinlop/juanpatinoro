@@ -12,7 +12,7 @@ function Header() {
         <div className="navMenu" id="nav-menu">
           <ul className="navList grid">
             <li className="navItem">
-              <a href="#home" className="navLink">
+              <a href="#home" className="navLink activeLink">
                 <i className="uil uil-estate navIcon"></i> Inicio
               </a>
             </li>
@@ -46,6 +46,11 @@ function Header() {
         </div>
 
         <div className="navBtns">
+          {
+            //Boton para cambiar el tema de la pagina
+          }
+          <i className="uil uil-moon changeTheme" id="themeButton"></i>
+
           <div className="navToggle" id="nav-toggle">
             <i className="uil uil-apps"></i>
           </div>
